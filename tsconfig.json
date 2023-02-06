@@ -2,7 +2,16 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    /* Se llama para utilizar archivos JSON */
+    "resolveJsonModule": true,
     "baseUrl": "./",
+    "paths": {
+      "@core/*": ["src/app/core/*"],
+      "@data/*": ["src/app/data/*"],
+      "@modules/*": ["src/app/modules/*"],
+      "@shared/*": ["src/app/shared/*"],
+      "@environments/*": ["src/environments/*"],
+    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
